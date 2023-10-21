@@ -1,10 +1,11 @@
 const galleryRef = document.querySelector("[data-gellery]");
-const galleryItem = galleryList.children;
-console.log(galleryItem);
+const imegaRef = galleryRef.children;
 
-for(const item of galleryItem) {
-    item.addEventListener("click", () => {
-      item.classList.toggle("image-container")  
-    });
+console.log(imegaRef);
+
+for(let i = 0; i < imegaRef.length; i++) {
+  imegaRef.addEventList("click", () => {
+    imegaRef[i].classList.toggle("full-image-container");
+    imegaRef[i].firstElementChild.classList.toggle("full-image")
+  })
 };
-

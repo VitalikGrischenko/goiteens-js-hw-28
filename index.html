@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"  href="./css/1.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;1,700&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/1.css">
 </head>
 <body>
     <ul class="gallery" data-gellery>
-        <li>  
-            <img class="image" src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+
+        <li class="gallery__list" >
+            <img class="image" src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="зображення">
         </li>
-        <li>
-            <img class="image" src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+
+        <li class="gallery__list">
+            <img class="image" src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="зображення">
             </li>
-<li>
-    <img class="image" src="https://images.pexels.com/photos/11815778/pexels-photo-11815778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+            <li class="gallery__list">
+                <img class="image" src="https://images.pexels.com/photos/11815778/pexels-photo-11815778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                 alt="зображення">
+            </li>
+            <li class="gallery__list">
+                <img class="image" src="https://images.pexels.com/photos/6195166/pexels-photo-6195166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+            </li>
+            <li class="gallery__list">
+                <img class="image" src="https://images.pexels.com/photos/6957926/pexels-photo-6957926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+            </li>
+            <li class="gallery__list">
 
-</li>
-<li>
-    <img class="image" src="https://images.pexels.com/photos/6195166/pexels-photo-6195166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
-</li>
-<li>
-    <img class="image" src="https://images.pexels.com/photos/6957926/pexels-photo-6957926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
-
-</li>
-<li>
-    <img class="image" src="https://images.pexels.com/photos/15520825/pexels-photo-15520825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
-</li>
-    </ul>
-
+                <img class="image" src="https://images.pexels.com/photos/15520825/pexels-photo-15520825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="зображення">
+            </li>
+            </ul>
     <div id="controls">
         <input type="number" min="0" max="100" step="1" />
         <button type="button" data-action="render">Створити</button>
@@ -37,7 +46,7 @@
     </div>
     <div id="boxes"></div>
     
-    <script type="module" src="./js/1.js"></script>
+   <script src="./js/1.js"></script>
     <script type="module" src="./js/2.js"></script>
 </body>
 </html>

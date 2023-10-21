@@ -8,8 +8,10 @@
     object-fit: cover;
     margin-right: 20px;
     cursor: pointer;
+    
 };
 .full-image-container {
+    opacity: 1;
     display: none;
     position: fixed;
     top: 0;
@@ -30,3 +32,7 @@
     left: 0;
     right: 0;
 };
+
+.gallery__list:first-child {
+    opacity: 0;
+}
