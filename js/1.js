@@ -1,11 +1,19 @@
-const galleryRef = document.querySelector("[data-gellery]");
-const imegaRef = galleryRef.children;
+const imagesRef = document.querySelectorAll('.image');
+const galleryRef = document.querySelector('.gallery');
 
-console.log(imegaRef);
 
-for(let i = 0; i < imegaRef.length; i++) {
-  imegaRef.addEventList("click", () => {
-    imegaRef[i].classList.toggle("full-image-container");
-    imegaRef[i].firstElementChild.classList.toggle("full-image")
-  })
-};
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') {
+    showImage(currentImageIndex - 1);
+  } else if (e.key === 'ArrowRight') {
+    showImage(currentImageIndex + 1);
+  }
+});
+
+images.forEach((imagesRef, index) => {
+  imagesRef.addEventListener('click', () => {
+    showImage(index);
+  });
+});
+
+showImage(currentImageIndex);
